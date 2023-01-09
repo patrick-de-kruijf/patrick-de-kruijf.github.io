@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Freak Confessions</title>
+    <link>/</link>
+    <description>Recent content on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:02 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Virtual Desktop - Magazine article</title>
+      <link>/post/azure-virtual-desktop-magazine13/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate>
+      
+      <guid>/post/azure-virtual-desktop-magazine13/</guid>
+      <description>Last year I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.</description>
+    </item>
+    
+    <item>
+      <title>My Xpirit Magazine Articles</title>
+      <link>/post/my-xpirit-magazine-articles/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate>
+      
+      <guid>/post/my-xpirit-magazine-articles/</guid>
+      <description>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13.</description>
+    </item>
+    
+    <item>
+      <title>Shared Image Gallery</title>
+      <link>/glossary/shared-image-gallery/</link>
+      <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
+      
+      <guid>/glossary/shared-image-gallery/</guid>
+      <description>What is a Shared Image Gallery? The Shared Image Gallery is a repository for images that can be used to create VMs.</description>
+    </item>
+    
+    <item>
+      <title>Xpirit Innovation Day</title>
+      <link>/glossary/xpirit-innovation-day/</link>
+      <pubDate>Thu, 22 Dec 2022 01:13:50 +0000</pubDate>
+      
+      <guid>/glossary/xpirit-innovation-day/</guid>
+      <description>At Xpirit, we organize Innovation Days once every two months. That&amp;rsquo;s a pretty high frequency. But Authority is our mission and we can only reach our goal by constantly pushing boundaries and exploring new techniques.</description>
+    </item>
+    
+    <item>
+      <title>Infrastructure as Code</title>
+      <link>/glossary/infrastructure-as-code/</link>
+      <pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate>
+      
+      <guid>/glossary/infrastructure-as-code/</guid>
+      <description>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Adoption Framework</title>
+      <link>/glossary/cloud-adoption-framework/</link>
+      <pubDate>Thu, 01 Dec 2022 01:13:50 +0000</pubDate>
+      
+      <guid>/glossary/cloud-adoption-framework/</guid>
+      <description>The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals.</description>
+    </item>
+    
+    <item>
+      <title>Azure Virtual Desktop</title>
+      <link>/glossary/azure-virtual-desktop/</link>
+      <pubDate>Tue, 04 Oct 2022 02:13:50 +0000</pubDate>
+      
+      <guid>/glossary/azure-virtual-desktop/</guid>
+      <description>Azure Virtual Desktop is Microsoft&amp;rsquo;s desktop and app virtualization Virtual Desktop Infrastructure (VDI) service that runs on Microsoft Azure.</description>
+    </item>
+    
+    <item>
+      <title>Azure Landing Zones</title>
+      <link>/glossary/azure-landing-zones/</link>
+      <pubDate>Mon, 03 Oct 2022 02:13:50 +0000</pubDate>
+      
+      <guid>/glossary/azure-landing-zones/</guid>
+      <description>An Azure landing zone is the output of a multi-subscription Azure environment that accounts for scale, security governance, networking, and identity.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Professionally A consultant with 12+ years experience working with an incredible amount of companies to help them reach their goals and guide them through their journey.</description>
+    </item>
+    
+    <item>
+      <title>Search Result</title>
+      <link>/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

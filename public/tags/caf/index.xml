@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CAF on Azure Freak Confessions</title>
+    <link>/tags/caf/</link>
+    <description>Recent content in CAF on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Dec 2022 01:13:50 +0000</lastBuildDate><atom:link href="/tags/caf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Adoption Framework</title>
+      <link>/glossary/cloud-adoption-framework/</link>
+      <pubDate>Thu, 01 Dec 2022 01:13:50 +0000</pubDate>
+      
+      <guid>/glossary/cloud-adoption-framework/</guid>
+      <description>The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xpirit Magazine on Azure Freak Confessions</title>
+    <link>/tags/xpirit-magazine/</link>
+    <description>Recent content in Xpirit Magazine on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:02 +0000</lastBuildDate><atom:link href="/tags/xpirit-magazine/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Virtual Desktop - Magazine article</title>
+      <link>/post/azure-virtual-desktop-magazine13/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate>
+      
+      <guid>/post/azure-virtual-desktop-magazine13/</guid>
+      <description>Last year I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.</description>
+    </item>
+    
+    <item>
+      <title>My Xpirit Magazine Articles</title>
+      <link>/post/my-xpirit-magazine-articles/</link>
+      <pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate>
+      
+      <guid>/post/my-xpirit-magazine-articles/</guid>
+      <description>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13.</description>
+    </item>
+    
+  </channel>
+</rss>
