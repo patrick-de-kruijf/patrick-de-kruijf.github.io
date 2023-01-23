@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Management on Azure Freak Confessions</title>
+    <link>/tags/azure-management/</link>
+    <description>Recent content in Azure Management on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/azure-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Access Control (RBAC)</title>
+      <link>/glossary/azure-rbac/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-rbac/</guid>
+      <description>Access to your Azure resources are managed by Azure Access Control (RBAC). Access control gives your the possibility to manage who has access to your resources and what they can do with them.</description>
+    </item>
+    
+    <item>
+      <title>Azure Management Groups</title>
+      <link>/glossary/azure-management-groups/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-management-groups/</guid>
+      <description>Management groups provide a governance scope for Azure subscriptions to manage access, policies and compliance. You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.</description>
+    </item>
+    
+    <item>
+      <title>Azure Subscriptions</title>
+      <link>/glossary_draft/azure-subscriptions/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary_draft/azure-subscriptions/</guid>
+      <description>Useful links Microsoft learn page </description>
+    </item>
+    
+    <item>
+      <title>Azure Policy</title>
+      <link>/glossary/azure-policies/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-policies/</guid>
+      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
+    </item>
+    
+  </channel>
+</rss>

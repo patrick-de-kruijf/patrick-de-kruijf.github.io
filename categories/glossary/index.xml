@@ -7,12 +7,39 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/glossary/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Azure Access Control (RBAC)</title>
+      <link>/glossary/azure-rbac/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-rbac/</guid>
+      <description>Access to your Azure resources are managed by Azure Access Control (RBAC). Access control gives your the possibility to manage who has access to your resources and what they can do with them.</description>
+    </item>
+    
+    <item>
       <title>Azure Active Directory (Azure AD)</title>
       <link>/glossary/azure-active-directory/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
       
       <guid>/glossary/azure-active-directory/</guid>
       <description>Azure Active Directory (Azure AD) is a cloud-based identity and access management service. It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.</description>
+    </item>
+    
+    <item>
+      <title>Azure Management Groups</title>
+      <link>/glossary/azure-management-groups/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-management-groups/</guid>
+      <description>Management groups provide a governance scope for Azure subscriptions to manage access, policies and compliance. You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.</description>
+    </item>
+    
+    <item>
+      <title>Azure Subscriptions</title>
+      <link>/glossary_draft/azure-subscriptions/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary_draft/azure-subscriptions/</guid>
+      <description>Useful links Microsoft learn page </description>
     </item>
     
     <item>
