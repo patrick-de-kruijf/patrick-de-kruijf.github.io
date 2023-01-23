@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Azure Policy on Azure Freak Confessions</title>
+    <link>/tags/azure-policy/</link>
+    <description>Recent content in Azure Policy on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/azure-policy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Policy</title>
+      <link>/glossary/azure-policies/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-policies/</guid>
+      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
+    </item>
+    
+  </channel>
+</rss>

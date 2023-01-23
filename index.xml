@@ -5,7 +5,34 @@
     <link>/</link>
     <description>Recent content on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Jan 2023 00:00:02 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure Active Directory (Azure AD)</title>
+      <link>/glossary/azure-active-directory/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-active-directory/</guid>
+      <description>Azure Active Directory (Azure AD) is a cloud-based identity and access management service. It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.</description>
+    </item>
+    
+    <item>
+      <title>Single Sign-On (SSO)</title>
+      <link>/glossary/single-sign-on/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/single-sign-on/</guid>
+      <description>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.</description>
+    </item>
+    
+    <item>
+      <title>Azure Policy</title>
+      <link>/glossary/azure-policies/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/azure-policies/</guid>
+      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
+    </item>
+    
     <item>
       <title>Azure Virtual Desktop - Magazine article</title>
       <link>/post/azure-virtual-desktop-magazine13/</link>
@@ -76,6 +103,78 @@
       
       <guid>/glossary/azure-landing-zones/</guid>
       <description>An Azure landing zone is the output of a multi-subscription Azure environment that accounts for scale, security governance, networking, and identity.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post_draft/avd-sso/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post_draft/avd-sso/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/alz-hub-and-spoke/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/alz-hub-and-spoke/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/avd-scaling/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/avd-scaling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/azure-deployments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/azure-deployments/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/azure-governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/azure-governance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/azure-networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/azure-networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/azure-policies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/azure-policies/</guid>
+      <description>Abstract </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/talks/shared-image-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/talks/shared-image-gallery/</guid>
+      <description></description>
     </item>
     
     <item>

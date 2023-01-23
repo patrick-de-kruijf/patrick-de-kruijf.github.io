@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSO on Azure Freak Confessions</title>
+    <link>/tags/sso/</link>
+    <description>Recent content in SSO on Azure Freak Confessions</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/sso/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Sign-On (SSO)</title>
+      <link>/glossary/single-sign-on/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/glossary/single-sign-on/</guid>
+      <description>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.</description>
+    </item>
+    
+  </channel>
+</rss>
