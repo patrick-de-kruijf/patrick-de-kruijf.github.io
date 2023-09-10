@@ -144,6 +144,15 @@
     
     <item>
       <title></title>
+      <link>/post_draft/policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post_draft/policy/</guid>
+      <description>Azure Policy What is it? Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/talks/alz-hub-and-spoke/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

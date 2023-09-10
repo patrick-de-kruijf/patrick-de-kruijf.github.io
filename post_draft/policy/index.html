@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Xpirit Magazine</title>
+  <title></title>
 
   <meta name="author" content="Patrick de Kruijf">
   <meta name="description" content="  Follow the technical (Microsoft Azure) endeavours of Patrick de Kruijf and learn from my findings (and mistakes)!  ">
@@ -186,25 +186,6 @@ if (!doNotTrack) {
 
   
   
-<section class="section-sm pb-2 page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 mx-auto text-center">
-
-        
-          
-          <h4 class="mb-3 text-dark font-weight-bold">Showing posts from <mark>Xpirit Magazine</mark></h4>
-          
-        
-        
-
-        
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
   
   
 
@@ -213,71 +194,89 @@ if (!doNotTrack) {
 
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <div class="card-body" style="border-left: 0.5px solid #ED6B15; padding-left: 10px;">
-    <ul class="card-meta list-inline mb-2">
-      
-      <li class="list-inline-item mb-2">
-        <span>09 Jan, 2023</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="/tags/avd-/-wvd">AVD / WVD</a></li>
-          
-          <li class="list-inline-item"><a href="/tags/xpirit-magazine">Xpirit Magazine</a></li>
-          
-          <li class="list-inline-item"><a href="/tags/azure-virtual-desktop">Azure Virtual Desktop</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="/post/azure-virtual-desktop-magazine13/">Azure Virtual Desktop - Magazine article</a>
-    </h3>
-    <p>In 2022 I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.
-What is …</p>
+        <div class="content">
+          <h1 id="azure-policy">Azure Policy</h1>
+<h2 id="what-is-it">What is it?</h2>
+<p>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.Policies are rules that can be assigned to resources in your Azure environment.You can use Azure Policy to enforce standards and assess compliance.You can also use policies to prevent or (automatically) remediate non-compliant resources.
+Azure Policy provides an aggregated view of the state of your environment through the compliance dashboard, which shows the overall state of the environment and allows you to view the state of individual resources or policies.It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.</p>
+<p>There are two flavors of policies:</p>
+<ul>
+<li><strong><em>Built-in policies</em></strong> are policies that Azure provides. These policies are always available in the Azure Policy service and are stored within your tenant.</li>
+<li><strong><em>Custom policies</em></strong> are policies that you create yourself. These policies can be deployed to specific management groups, subscriptions, resource groups, or resources.</li>
+</ul>
+<p>On top of the flavors, there are also two types of definitions. The content of a policy is described in a policy definition. A policy definition can be assigned to a scope: a management group, subscription, resource group, or resource. A group of policies is bundled into a policy initiative (or policy set definition), which can also be assigned to a scope.</p>
+<p>To summarize the definition types:</p>
+<ul>
+<li><strong><em>Policy definitions</em></strong> are the building blocks of policies.A policy definition is a JSON document that defines the policy.A policy definition can be assigned to a scope.A scope can be a management group, subscription, resource group, or resource.</li>
+<li><strong><em>Policy initiatives</em></strong> (or Policy Set Definitions) are a collection of policy definitions that can be assigned to a scope.A scope can be a management group, subscription, resource group, or resource.</li>
+</ul>
+<h3 id="what-can-i-do-with-policies">What can I do with Policies?</h3>
+<p>Since policy initiatives are a collection of one or more policy definitions, let ’s start with understanding how policy definitions work.
+Policy definitions are using policy rules to dictate the logic to perform or validate.These rules are built using an if-then construct.The IF part contains the resource(s) to search for, the THEN part contains action to take.</p>
+<h3 id="the-if-part-of-the-policy-rules">The IF-part of the policy rules</h3>
+<p>The IF parts there are multiple options to identify the scope for the policy.These are using logical operators to check the conditions.Within the logical operators, conditions are used to determine if the policy should execute the THEN part.You can use the following operators:</p>
+<ul>
+<li><strong>not</strong>: the conditions should not be true (inverting the result).</li>
+<li><strong>allOf</strong>: each condition in the block, should be true.</li>
+<li><strong>anyOf</strong>: any condition in the block, should be true.</li>
+</ul>
+<p>With these logical operators you are flexible in terms of identifying which resources should be used in the specific policy.You can even use nested operators.
+The logical operators use conditions to identify when to perform the THEN part of the policy.
+Conditions are always described with a field value and an option that returns a true or false result.Possible options are:</p>
+<ul>
+<li><strong>equals</strong> – true if the field value matches the equals value.</li>
+<li><strong>notEquals</strong> – true the field value does not match the notEquals value.</li>
+<li><strong>exists</strong> – true if the field value exists.</li>
+</ul>
+<p>The field values can contain a multitude of different options.Let’s go over the more common ones:</p>
+<ul>
+<li><strong>Type</strong> indicates the actual resource type (i.e., &ldquo;Microsoft.KeyVault/vaults&rdquo;)</li>
+<li><strong>Location</strong> indicates the resource location (i.e., &ldquo;WestEurope&rdquo;)</li>
+<li><strong>Id</strong> indicates the actual resource ID of an Azure resource (see properties on a resource to view/copy the resource ID)</li>
+<li><strong><a href="https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure#aliases">Aliases</a></strong> can be used to access property of a resource type.</li>
+<li>And <strong><a href="https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure#fields">many more</a></strong>.</li>
+</ul>
+<h3 id="the-then-part-of-policy-rules">The THEN-part of policy rules</h3>
+<p>For the THEN part, Azure Policy uses an effect to identify the action to be taken when the conditions of the definition or initiative are non-compliant.
+Eight types of effects are available:</p>
+<ul>
+<li><strong>Deny</strong> will ensure the non-compliant resource cannot be created or deployed.</li>
+<li><strong>Audit</strong> will audit the resources’ compliance and show the status in the compliance dashboard.</li>
+<li><strong>DeployIfNotExists</strong> will deploy the configuration specified in the definition to the resource if the configuration does not exist.</li>
+<li><strong>AuditIfNotExists</strong> will audit the configuration specified in the definition and only report if the resource configuration does not exist.</li>
+<li><strong>Modify</strong> is used to add, update, or remove properties or tags on a subscription or resource during creation or update.</li>
+<li><strong>Append</strong> is used to add more fields to the requested resource during creation or update.</li>
+<li><strong>Manual</strong> enables you to self-attest the compliance of resources or scopes.</li>
+<li><strong>Disabled</strong> means that the logic in the definition will effectively do nothing and is turned off.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>
+<p><em>I only want to allow resources to be deployed in the West Europe region.</em>
+This can be achieved by using the DENY effect, it will verify the condition and it will DENY the deployment if the condition returns as true.</p>
+<p>In this case IF the location is not equal to WestEurope returns true THEN we DENY the deployment.</p>
+</li>
+<li>
+<p><em>I want to always add soft delete on key vaults on creation.</em>
+For this scenario we can use <strong>APPEND</strong> as the effect, we will verify if the condition if true and then we will append a specific configuration/property.</p>
+<p>In this case, we verify <strong>IF</strong> the type of the resource is a Key Vault and if the soft delete option is not true.When the conditions have been verified, we will <strong>THEN</strong> <strong>APPEND</strong> the soft delete option.</p>
+</li>
+</ul>
+<h2 id="how-are-policy-definitions-built">How are policy definitions built?</h2>
+<p>Before we can proceed with using Azure Policy, we need to understand what these definitions contain.We already mentioned that a policy definition is a JSON document that defines the logic.
+The JSON document has a few required elements, which dictate the logic to follow. I will skip the explanation of the common parts, like the id, type, and display name.But will dive into the logic parts:
+The logic within an Azure Policy document starts with the &ldquo;policyRule&rdquo; segment, which always holds an &ldquo;if&rdquo; and &ldquo;then&rdquo; segment.</p>
+<h2 id="what-can-i-do-with-policy-definitions">What can I do with Policy Definitions?</h2>
+<p>The policy definition holds the information and logic to perform a validation.</p>
+<h2 id="why-would-i-use-them">Why would I use them?</h2>
+<p>Placeholder</p>
+<h2 id="how-do-i-assign-them">How do I assign them?</h2>
+<p>Placeholder</p>
+<h2 id="how-can-i-see-my-resource-compliance">How can I see my resource compliance?</h2>
+<p>Placeholder</p>
 
-     
-  </div>
-</article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <div class="card-body" style="border-left: 0.5px solid #ED6B15; padding-left: 10px;">
-    <ul class="card-meta list-inline mb-2">
-      
-      <li class="list-inline-item mb-2">
-        <span>02 Jan, 2023</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="/tags/xpirit-magazine">Xpirit Magazine</a></li>
-          
-          <li class="list-inline-item"><a href="/tags/sharing-knowlegde">Sharing Knowlegde</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="/post/my-xpirit-magazine-articles/">My Xpirit Magazine Articles</a>
-    </h3>
-    <p>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13. In this blog, I&amp;rsquo;m explaining how my daily …</p>
-
-     
-  </div>
-</article>
-          </div>
-          
         </div>
       </div>
     </div>
