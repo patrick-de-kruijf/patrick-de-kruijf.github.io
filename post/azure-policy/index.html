@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Blog</title>
+  <title>Azure Policy - Magazine article</title>
 
   <meta name="author" content="Patrick de Kruijf">
-  <meta name="description" content="  Follow the technical (Microsoft Azure) endeavours of Patrick de Kruijf and learn from my findings (and mistakes)!  ">
+  <meta name="description" content=" An online copy of my article in the Xpirit Magazine #15 about Azure Policy ">
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -186,25 +186,6 @@ if (!doNotTrack) {
 
   
   
-<section class="section-sm pb-2 page-header">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 mx-auto text-center">
-
-        
-          
-          <h4 class="mb-3 text-dark font-weight-bold">Showing posts from <mark>Blog</mark></h4>
-          
-        
-        
-
-        
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
   
   
 
@@ -213,44 +194,520 @@ if (!doNotTrack) {
 
 <section class="section-sm">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
+    <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="row">
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+        <div class="text-center mb-5">
+          <h3 class="h2 mb-4 post-title">Azure Policy - Magazine article</h3>
+          <ul class="card-meta list-inline">
+            <li class="list-inline-item">
+              <a href="/about" class="card-meta-author">
+                Patrick de Kruijf
+              </a>
+            </li>
+            <li class="list-inline-item">|</li>
+            <li class="list-inline-item">
+              <span>25 October 2023</span>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div class="content">
+          <p><em>This article is written for the <a href="https://xpirit.com/download/xprt-magazine-n-15/">Xpirit Magazine #15</a></em></p>
+<p>Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&rsquo;s standards. You could go through each resource and check if they are compliant, but that would be a lot of work. Luckily, Azure Policy can help you with that. Azure Policy is a management tool that helps you enforce and control the settings and configurations of resources within your Azure cloud environment. It enables you to define and enforce rules and policies to ensure that your resources adhere to specific compliance and governance requirements. These policies can cover various aspects, such as security, resource tagging, and naming conventions, helping you maintain a consistent and secure cloud infrastructure. Azure Policy provides a centralized way to monitor and enforce these policies, ensuring that your Azure resources are aligned with your organization&rsquo;s standards and best practices.</p>
+<p>Azure Policy works with definitions to set the conditions and rules to be executed. Definitions dictate the logic, followed by assignments that apply the logic to a scope. A scope can be a management group, subscription, resource group, or resource. When an assignment is made, you can review the compliance of your resources in the compliance dashboard.</p>
+<p>When you are ready to look at Azure Policy, you will probably be overwhelmed. Luckily, Microsoft Azure has supplied you with a set of built-in policies that you can use to get started. Additionally, when the built-in policies are not sufficient for your needs, you have the option to create custom policies. Below a short summary of the differences:</p>
+<ul>
+<li><strong>Built-in</strong> policy definitions are provided by Microsoft and can be used to audit your environment against.</li>
+<li><strong>Custom</strong> policy definitions are created by you and can be used to audit your environment against.</li>
+</ul>
+<p><em>Important note for built-in policies, they are deployed to the Root Tenant Group and their names are GUIDs. Their display name will explain better what each policy definition does.</em></p>
+<p><img src="../images/compliancedashboard.png" alt="Policy compliance dashboard"></p>
+<h2 id="why-would-i-use-it">Why would I use it?</h2>
+<p>Azure Policy is quite powerful and enables your organization to enforce standards and assess compliance. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources. But why would you use it? Let’s take a look at some of the benefits of using Azure Policy:</p>
+<ul>
+<li><strong>Enforce standards</strong>: Azure Policy helps to enforce standards and assess compliance. You can also use policies to prevent or (automatically) remediate non-compliant resources.</li>
+<li><strong>Centralized management</strong>: Azure Policy provides a centralized management experience for all your policies. You can create, assign, and manage policies from a single location.</li>
+<li><strong>Aggregated view</strong>: Azure Policy provides an aggregated view of the state of your environment through the compliance dashboard, which shows the overall state of the environment and allows you to view the state of individual resources or policies.</li>
+<li><strong>Built-in compliance standards</strong>: Azure Policy provides built-in compliance standards that can be used to audit your environment against. These standards include CIS, PCI, HIPAA, ISO, NIST, SOC, and more.</li>
+<li><strong>Bring resources to compliance</strong>: Azure Policy helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.</li>
+<li><strong>Custom compliance standards</strong>: Azure Policy provides the ability to create custom compliance standards that can be used to audit your environment against.</li>
+<li><strong>Audit and remediate</strong>: Azure Policy provides the ability to audit and remediate your environment. You can audit your environment by using the audit effect. You can remediate your environment by using the deployIfNotExists effect.</li>
+<li><strong>Steer user behavior</strong>: Azure Policy can be used to steer user behavior by restricting the use of specific resource types. For example, you can restrict the use of public IP&rsquo;s.</li>
+</ul>
+<p>Now we know why we would use Azure Policy, let&rsquo;s take a look at some of the real life scenario&rsquo;s that can be solved with Azure Policy:</p>
+<ul>
+<li>Restricting the location of resources
+<em>i.e., all resources should be deployed in West Europe or North Europe</em></li>
+<li>Enforcing tagging on resources
+<em>i.e., all resources should have a cost center tag</em></li>
+<li>Steer user behavior by restricting the use of specific resource types or SKUs
+<em>i.e., no use of public IP&rsquo;s, deny creation of GPU VM&rsquo;s</em></li>
+<li>Enforcing the configuration of specific resource configurations
+<em>i.e., soft delete on key vaults, or encryption on storage accounts</em></li>
+<li>Configure DNS Private Zone settings automatically on private endpoints
+<em>i.e., configure the DNS Private Zone settings on private endpoints to use the private DNS zone</em></li>
+<li>Enforce resource naming for Resource Groups
+<em>i.e., all resource groups should start with rg-</em></li>
+</ul>
+<h2 id="how-do-i-use-azure-policy">How do I use Azure Policy?</h2>
+<p>First, you start with a policy definition that dictates the logic to execute. This can be either a built-in or custom policy. Built-in policies are deployed to the Root Tenant Group and therefor available everywhere in your Management Group and Subscription hierachie. Custom policies are deployed to a specific scope and therefor only available in that scope or a child scope. The deployment of a policy definition is nothing more than making the policy definition available to be used.</p>
+<p>In order to apply the logic of a policy definition to a certain scope, which can be the scope the policy definition was deployed to or any of the child scope in the hierachie. You will need to create a policy assignment. A policy assignment is the actual assignment of the policy definition to a scope. The policy assignment will evaluate the resources in the scope against the policy definition. The policy assignment will also show the compliance of the resources in the scope.</p>
+<p>But what if I want to combine multiple policy definitions and assign it as part of a single policy? This is where policy initiatives come in. Policy initiatives are a collection of one or more policy definitions. Like policy definitions, these are deployed to a specific scope and can be assigned to a scope. The assignment of a policy initiative is the same as the assignment of a policy definition.</p>
+<p><img src="../images/policy_deployment_assignment.png" alt="Policy deployment scope and assignment"></p>
+<h3 id="policy-definitions">Policy Definitions</h3>
+<p>A policy definition is a JSON document that defines the logic of the policy. Let&rsquo;s create a policy definition together.</p>
+<ul>
+<li><strong>Name</strong>: The name of the policy definition.</li>
+<li><strong>Description</strong>: A description of the policy definition.</li>
+<li><strong>PolicyRule</strong>: The policy rule that defines the logic of the policy definition.</li>
+<li><strong>Metadata</strong>: Metadata about the policy definition.</li>
+<li><strong>Parameters</strong>: Parameters that can be used in the policy rule.</li>
+</ul>
+<h4 id="name">Name</h4>
+<p>The name of the policy definition. The name is used to identify the policy definition. The name must be unique within the scope of the policy definition.</p>
+<h4 id="description">Description</h4>
+<p>A description of the policy definition. The description is used to describe the policy definition. The description is optional.</p>
+<h4 id="policyrule">PolicyRule</h4>
+<p>Policy definitions are using policy rules to dictate the logic to perform or validate. These rules are built using an if-then construct. The <strong>IF</strong> part contains the resource(s) to search for, the <strong>THEN</strong> part contains action to take.</p>
+<h5 id="the-if-part-of-the-policy-rules">The IF-part of the policy rules</h5>
+<p>The <strong>IF</strong> parts there are multiple options to identify the scope for the policy. These are using logical operators to check the conditions. Within the logical operators, conditions are used to determine if the policy should execute the <strong>THEN</strong> part. You can use the following operators:</p>
+<ul>
+<li><strong>not</strong> - the conditions should not be true (inverting the result).</li>
+<li><strong>allOf</strong> - each condition in the block, should be true.</li>
+<li><strong>anyOf</strong> - any condition in the block, should be true.</li>
+</ul>
+<p>With these logical operators you are flexible in terms of identifying which resources should be used in the specific policy. You can even use nested operators. The logical operators use conditions to identify when to perform the <strong>THEN</strong> part of the policy. Conditions are always described with a field value and an option that returns a true or false result. Possible options are:</p>
+<ul>
+<li><strong>equals</strong> – true if the field value matches the equals value.</li>
+<li><strong>notEquals</strong> – true the field value does not match the notEquals value.</li>
+<li><strong>exists</strong> – true if the field value exists.</li>
+<li><strong>in</strong> - true if the field value is in the list of values.</li>
+</ul>
+<p>The field values can contain a multitude of different options. Let’s go over some of the commonly used options:</p>
+<ul>
+<li><strong>Type</strong> indicates the actual resource type (i.e., &ldquo;Microsoft.KeyVault/vaults&rdquo;)</li>
+<li><strong>Location</strong> indicates the resource location (i.e., &ldquo;WestEurope&rdquo;)</li>
+<li><strong>Id</strong> indicates the actual resource ID of an Azure resource (see properties on a resource to view/copy the resource ID)</li>
+<li><strong><a href="https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure#aliases">Aliases</a></strong> can be used to access property of a resource type.</li>
+<li>And <strong><a href="https://learn.microsoft.com/en-us/azure/governance/policy/concepts/definition-structure#fields">many more</a></strong>.</li>
+</ul>
+<h5 id="the-then-part-of-policy-rules">The THEN-part of policy rules</h5>
+<p>For the THEN part, Azure Policy uses an effect to identify the action to be taken when the conditions of the definition or initiative are non-compliant. Eight types of effects are available:</p>
+<ul>
+<li><strong>Deny</strong> will ensure the non-compliant resource cannot be created or deployed.</li>
+<li><strong>Audit</strong> will audit the resources’ compliance and show the status in the compliance dashboard.</li>
+<li><strong>DeployIfNotExists</strong> will deploy the configuration specified in the definition to the resource if the configuration does not exist.</li>
+<li><strong>AuditIfNotExists</strong> will audit the configuration specified in the definition and only report if the resource configuration does not exist.</li>
+<li><strong>Modify</strong> is used to add, update, or remove properties or tags on a subscription or resource during creation or update.</li>
+<li><strong>Append</strong> is used to add more fields to the requested resource during creation or update.</li>
+<li><strong>Manual</strong> enables you to self-attest the compliance of resources or scopes.</li>
+<li><strong>Disabled</strong> means that the logic in the definition will effectively do nothing and is turned off.</li>
+</ul>
+<h4 id="metadata">Metadata</h4>
+<p>Metadata about the policy definition. The metadata is used to provide additional information about the policy definition. The metadata is optional. Common metadata properties are:</p>
+<ul>
+<li><strong>Category</strong>: The category of the policy definition.</li>
+<li><strong>Version</strong>: The version of the policy definition.</li>
+<li><strong>Deprecated</strong>: Indicates if the policy definition is deprecated.</li>
+<li><strong>Preview</strong>: Indicates if the policy definition is in preview.</li>
+</ul>
+<h4 id="parameters">Parameters</h4>
+<p>Parameters are optional. They can be used to make the policy definition more flexible. Parameters are defined in the parameters section of the policy definition. Parameters are referenced in the policy rule by using the following syntax: <code>[parameters('parameterName')]</code>. Parameters will be prompted for when assigning the policy definition.</p>
+<h4 id="result">Result</h4>
+<p>Let’s take a look at an example of a policy definition. The following policy definition is used to audit the use of the <code>Microsoft.Storage/storageAccounts/networkAcls/defaultAction</code> property. The policy definition is named <code>audit-storage-account-network-acl-default-action</code> and has the following properties:</p>
+<ul>
+<li><strong>Description</strong>: Audit the use of the <code>Microsoft.Storage/storageAccounts/networkAcls/defaultAction</code> property.</li>
+<li><strong>PolicyRule</strong>: If the <code>type</code> of the resource is <code>Microsoft.Storage/storageAccounts</code> and the <code>Microsoft.Storage/storageAccounts/networkAcls/defaultAction</code> property is not equal to <code>Deny</code>, then audit the resource.</li>
+<li><strong>Metadata</strong>: The category is <code>Storage</code> and the version is <code>1.0.0</code>.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Audit storage account network ACL default action&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Audit the use of the Microsoft.Storage/storageAccounts/networkAcls/defaultAction property.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;mode&#34;</span>: <span style="color:#e6db74">&#34;Indexed&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;policyRule&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;if&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;allOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;type&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;equals&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Storage/storageAccounts&#34;</span>
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Storage/storageAccounts/networkAcls/defaultAction&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;notEquals&#34;</span>: <span style="color:#e6db74">&#34;Deny&#34;</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;then&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;effect&#34;</span>: <span style="color:#e6db74">&#34;audit&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;category&#34;</span>: <span style="color:#e6db74">&#34;Storage&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h4 id="examples">Examples</h4>
+<ul>
+<li>
+<p><em>I only want to allow resources to be deployed in the West Europe region.</em>
+This can be achieved by using the <strong>DENY</strong> effect, it will verify the condition and it will <strong>DENY</strong> the deployment if the condition returns as true.</p>
+<p>In this case <strong>IF</strong> the location is not equal to WestEurope returns true <strong>THEN</strong> we <strong>DENY</strong> the deployment.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;policyRule&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;if&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;not&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;location&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;equals&#34;</span>: <span style="color:#e6db74">&#34;WestEurope&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;then&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;effect&#34;</span>: <span style="color:#e6db74">&#34;Deny&#34;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+<li>
+<p><em>I want to always add soft delete on key vaults on creation.</em>
+For this scenario we can use <strong>APPEND</strong> as the effect, we will verify if the condition if true and then we will append a specific configuration/property.</p>
+<p>In this case, we verify <strong>IF</strong> the type of the resource is a Key Vault and if the soft delete option is not true.When the conditions have been verified, we will <strong>THEN</strong> <strong>APPEND</strong> the soft delete option.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;policyRule&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;if&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;anyOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;allOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;type&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;equals&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults&#34;</span>
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults/enableSoftDelete&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;notEquals&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;then&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;effect&#34;</span>: <span style="color:#e6db74">&#34;append&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;details&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults/enableSoftDelete&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div></li>
+</ul>
+<h3 id="how-do-i-deploy-policy-definitions">How do I deploy policy definitions?</h3>
+<p>As always with cloud resources, the preferably way to deploy them is using Infrastructure as Code (IaC). Azure Policy definitions can be deployed using ARM templates, Azure CLI, Bicep, Terraform, or PowerShell. The following example shows how to deploy the policy definition using a PowerShell script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>New-AzPolicyDefinition -Name <span style="color:#e6db74">&#39;audit-storage-account-network-acl-default-action&#39;</span> -DisplayName <span style="color:#e6db74">&#39;Audit storage account network ACL default action&#39;</span> -Description <span style="color:#e6db74">&#39;Audit the use of the Microsoft.Storage/storageAccounts/networkAcls/defaultAction property.&#39;</span> -Policy <span style="color:#e6db74">&#39;audit-storage-account-network-acl-default-action.json&#39;</span> -Mode All
+</span></span></code></pre></div><p><strong><em>Important</em></strong> to note is that the PowerShell cmdlet uses the <code>-Policy</code> argument to define the Policy Rule. Each of the important parts of the policy definition is defined in the cmdlet.</p>
+<p><strong>File: audit-storage-account-network-acl-default-action.json</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;if&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;anyOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;allOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;type&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;equals&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults&#34;</span>
+</span></span><span style="display:flex;"><span>          },
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults/enableSoftDelete&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;notEquals&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;then&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;effect&#34;</span>: <span style="color:#e6db74">&#34;append&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;details&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.KeyVault/vaults/enableSoftDelete&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="policy-initiatives">Policy Initiatives</h2>
+<p>A policy initiative is a collection of one or more policy definitions. Policy initiatives are used to group policy definitions together. This can be useful when you want to assign multiple policy definitions to a scope. Instead of assigning each policy definition individually, you can assign the policy initiative. The policy initiative will then assign all the policy definitions that are part of the policy initiative. Let’s create a policy initiative together.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;properties&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;displayName&#34;</span>: <span style="color:#e6db74">&#34;Audit storage account network ACL&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Audit the use of the Microsoft.Storage/storageAccounts/networkAcls/defaultAction property and the Microsoft.Storage/storageAccounts/networkAcls/bypass property.&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metadata&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;category&#34;</span>: <span style="color:#e6db74">&#34;Storage&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;policyDefinitions&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;policyDefinitionId&#34;</span>: <span style="color:#e6db74">&#34;/providers/Microsoft.Authorization/policyDefinitions/audit-storage-account-network-acl-default-action&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;parameters&#34;</span>: {}
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;policyDefinitionId&#34;</span>: <span style="color:#e6db74">&#34;/providers/Microsoft.Authorization/policyDefinitions/audit-storage-account-network-acl-bypass&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;parameters&#34;</span>: {}
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="how-do-i-deploy-policy-initiatives">How do I deploy policy initiatives?</h3>
+<p>As always with cloud resources, the preferably way to deploy them is using Infrastructure as Code (IaC). Azure Policy initiatives can be deployed using ARM templates, Bicep, Terraform, or PowerShell. The following example shows how to deploy the policy initiative using a Terraform:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Create a new policy initiative using the policy definitions supplied in the audit-storage-account-network-acl.json file</span>
+</span></span><span style="display:flex;"><span>New-AzPolicySetDefinition -Name <span style="color:#e6db74">&#39;audit-storage-account-network-acl&#39;</span> -PolicyDefinition <span style="color:#e6db74">&#39;audit-storage-account-network-acl.json&#39;</span>
+</span></span></code></pre></div><p><strong><em>File: audit-storage-account-network-acl.json</em></strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;policyDefinitionId&#34;</span>: <span style="color:#e6db74">&#34;/providers/Microsoft.Authorization/policyDefinitions/audit-storage-account-network-acl-default-action&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;parameters&#34;</span>: {}
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;policyDefinitionId&#34;</span>: <span style="color:#e6db74">&#34;/providers/Microsoft.Authorization/policyDefinitions/audit-storage-account-network-acl-bypass&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;parameters&#34;</span>: {}
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><h2 id="policy-assignments">Policy Assignments</h2>
+<p>A policy assignment is the actual assignment of the policy definition or policy initiative to a scope. The policy assignment will evaluate the resources in the scope against the policy definition or policy initiative. The policy assignment will also show the compliance of the resources in the scope. Let’s create a policy assignment together, using PowerShell.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Get the subscription data</span>
+</span></span><span style="display:flex;"><span>$Subscription = Get-AzSubscription -SubscriptionName <span style="color:#e6db74">&#39;Subscription01&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the policy definition data</span>
+</span></span><span style="display:flex;"><span>$Policy = Get-AzPolicyDefinition -Name <span style="color:#e6db74">&#39;audit-storage-account-network-acl-default-action&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the policy assignment using the retrieved subscription and policy definition data</span>
+</span></span><span style="display:flex;"><span>New-AzPolicyAssignment -Name <span style="color:#e6db74">&#39;audit-storage-account-network-assignment&#39;</span> -PolicyDefinition $Policy -Scope <span style="color:#e6db74">&#34;/subscriptions/</span>$($Subscription.Id)<span style="color:#e6db74">&#34;</span>
+</span></span></code></pre></div><h2 id="how-can-i-see-my-resource-compliance">How can I see my resource compliance?</h2>
+<p>After you&rsquo;ve have created and assigned your policies, you can view the compliance of your resources. The compliance dashboard provides an aggregated view of the state of your environment. It shows the overall state of the environment and allows you to view the state of individual resources or policies. The compliance dashboard can be found in the Azure Portal under <strong>All services</strong> &gt; <strong>Policy</strong> &gt; <strong>Compliance</strong>.</p>
+<p><img src="./../images/compliance.png" alt="Compliance Dashboard"></p>
+<h3 id="regulatory-compliance">Regulatory compliance</h3>
+<p>In order to view regulatory compliance, Microsoft Azure also uses Azure Policy to report on the compliance state of the regulatory compliance standards you have assigned. Whenever you select a regulatory compliance standard, Azure Policy will automatically create a policy assignment to audit the compliance state of the regulatory compliance standard. Azure Defender for Cloud also uses the input from Azure Policy to show recommendations in the Azure Portal.</p>
+<p>To view the compliance state of the regulatory compliance standards you have assigned, you can use the regulatory compliance dashboard. The regulatory compliance dashboard can be found in the Azure Portal under <strong>All services</strong> &gt; <strong>Microsoft Defender for Cloud</strong> &gt; <strong>Regulatory compliance</strong>.</p>
+<p><img src="./../images/regulatory_compliance.png" alt="Regulatory Compliance Dashboard"></p>
+<h2 id="how-does-remediation-work">How does remediation work?</h2>
+<p>Remediation is the process of bringing a non-compliant resource into compliance. When remediation is done manually, you can trigger the remediation from the compliance dashboard. When remediation should be done automatically, which is only possible when using the <strong>DeployIfNotExists</strong> or <strong>Modify</strong> effect, you can configure the policy to automatically remediate non-compliant resources. In order for the policy to remediate automatically, it will use a managed identity. This managed identity should be supplied in the policy assignment. In order to use the remediation, you need to specify, in the policy definition, which role the managed identity should have on the resource. The policy assignment will start the deployment to perform the remediation task. When using the <strong>DeplyoIfNotExists</strong> effect, the deployment will be visible in the deployment dashboard so you can track and troubleshoot the deployment.</p>
+<h3 id="automatic-remediation">Automatic remediation</h3>
+<p>Let&rsquo;s use a built-in policy definition to show how automatic remediation works. The built-in policy definition is named <code>Add or replace a tag on resource groups</code> and has the following PolicyRule logic:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;if&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;allOf&#34;</span>: [
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;type&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;equals&#34;</span>: <span style="color:#e6db74">&#34;Microsoft.Resources/subscriptions/resourceGroups&#34;</span>
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;[concat(&#39;tags[&#39;, parameters(&#39;tagName&#39;), &#39;]&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;notEquals&#34;</span>: <span style="color:#e6db74">&#34;[parameters(&#39;tagValue&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;then&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;effect&#34;</span>: <span style="color:#e6db74">&#34;modify&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;details&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;roleDefinitionIds&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/providers/microsoft.authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c&#34;</span>
+</span></span><span style="display:flex;"><span>      ],
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;operations&#34;</span>: [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;operation&#34;</span>: <span style="color:#e6db74">&#34;addOrReplace&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;field&#34;</span>: <span style="color:#e6db74">&#34;[concat(&#39;tags[&#39;, parameters(&#39;tagName&#39;), &#39;]&#39;)]&#34;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;value&#34;</span>: <span style="color:#e6db74">&#34;[parameters(&#39;tagValue&#39;)]&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The policy definition will check if the resource type is a resource group and if the tag is not equal to the specified value. If the conditions are true, the policy will modify the resource group and add or replace the specified tag.</p>
+<p>As described ealier, we should create a policy assignment to make this logic active on a certain scope, let&rsquo;s create a policy assignment together, using PowerShell.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Get the subscription data</span>
+</span></span><span style="display:flex;"><span>$Subscription = Get-AzSubscription -SubscriptionName <span style="color:#e6db74">&#39;Subscription01&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the policy definition data, using a Where-Object, since built-in policies are named with a GUID</span>
+</span></span><span style="display:flex;"><span>$Policy = Get-AzPolicyDefinition | Where-Object {$_.Properties.DisplayName <span style="color:#f92672">-eq</span> <span style="color:#e6db74">&#39;Add or replace a tag on resource groups&#39;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the parameters for the policy assignment to pass to the -PolicyParameterObject parameter</span>
+</span></span><span style="display:flex;"><span>$parameters = @{<span style="color:#e6db74">&#39;tagName&#39;</span>=<span style="color:#e6db74">&#39;Environment&#39;</span>;<span style="color:#e6db74">&#39;tagValue&#39;</span>=<span style="color:#e6db74">&#39;Production&#39;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the policy assignment using the retrieved subscription and policy definition data</span>
+</span></span><span style="display:flex;"><span>New-AzPolicyAssignment -Name <span style="color:#e6db74">&#39;add-tag-resource-group&#39;</span> -PolicyDefinition $Policy -Scope <span style="color:#e6db74">&#34;/subscriptions/</span>$($Subscription.Id)<span style="color:#e6db74">&#34;</span> -IdentityType <span style="color:#e6db74">&#39;SystemAssigned&#39;</span> -Location <span style="color:#e6db74">&#39;WestEurope&#39;</span> -PolicyParameterObject $parameters
+</span></span></code></pre></div><p><img src="../images/policy_assignment_remediation.png" alt="Policy Assignment - Remediation"></p>
+<p>The policy assignment will automatically remediate the resource group and add or replace the specified tag. The deployment will be visible in the deployment dashboard so you can track and troubleshoot the deployment.</p>
+<p>So what happens when you create a resource group without the specified tag? Let&rsquo;s try it out!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Set the subscription context</span>
+</span></span><span style="display:flex;"><span>Set-AzContext -Subscription <span style="color:#e6db74">&#39;Subscription01&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a new resource group without the specified tag</span>
+</span></span><span style="display:flex;"><span>New-AzResourceGroup -Name <span style="color:#e6db74">&#39;rg-remediation-test&#39;</span> -Location <span style="color:#e6db74">&#39;WestEurope&#39;</span>
+</span></span></code></pre></div><p><img src="../images/result_rg_deployment_remediation.png" alt="Result of resource group"></p>
+<p>As you can see, the resource group is created without the specified tag and the output already shows that the policy assignment has remediated the resource group. When we check the resource group, we can see that the tag is added.</p>
+<p><img src="../images/tag_present.png" alt="Tag present"></p>
+<h2 id="manual-remediation">Manual remediation</h2>
+<p>Let&rsquo;s use the same example as with the automatic remediation, but we have now changed the policy to seek the <code>TagName:Demo</code> with a <code>TagValue:ManualRemediation</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Get the subscription data</span>
+</span></span><span style="display:flex;"><span>$Subscription = Get-AzSubscription -SubscriptionName <span style="color:#e6db74">&#39;Subscription01&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the policy definition data, using a Where-Object, since built-in policies are named with a GUID</span>
+</span></span><span style="display:flex;"><span>$Policy = Get-AzPolicyDefinition | Where-Object {$_.Properties.DisplayName <span style="color:#f92672">-eq</span> <span style="color:#e6db74">&#39;Add or replace a tag on resource groups&#39;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the parameters for the policy assignment to pass to the -PolicyParameterObject parameter</span>
+</span></span><span style="display:flex;"><span>$parameters = @{<span style="color:#e6db74">&#39;tagName&#39;</span>=<span style="color:#e6db74">&#39;Demo&#39;</span>;<span style="color:#e6db74">&#39;tagValue&#39;</span>=<span style="color:#e6db74">&#39;ManualRemediation&#39;</span>}
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the policy assignment using the retrieved subscription and policy definition data</span>
+</span></span><span style="display:flex;"><span>New-AzPolicyAssignment -Name <span style="color:#e6db74">&#39;add-tag-resource-group&#39;</span> -PolicyDefinition $Policy -Scope <span style="color:#e6db74">&#34;/subscriptions/</span>$($Subscription.Id)<span style="color:#e6db74">&#34;</span> -IdentityType <span style="color:#e6db74">&#39;SystemAssigned&#39;</span> -Location <span style="color:#e6db74">&#39;WestEurope&#39;</span> -PolicyParameterObject $parameters
+</span></span></code></pre></div><p><img src="../images/non_compliant.png" alt="Policy Assignment - Non Compliant"></p>
+<p>Since the policy is not compliant, we can manually remediate the resource group by clicking on the <strong>Create Remediation Task</strong> button in the assignment page on the subscription.</p>
+<p><img src="../images/remediation_task_input.png" alt="Manual remediation input"></p>
+<p>After the remediation task has been created, we can see the task in the remediation tasks overview. And you should even see a completed remediation task.</p>
+<p><img src="../images/completed_remediation.png" alt="completed remediation"></p>
+<h2 id="exemptions">Exemptions</h2>
+<p>Sometimes you want to exclude certain resources from being evaluated by a policy. This can be done by using exemption. Exemptions can be made on policy assignments and on individual resources. Exemptions can be made for a specific amount of time or indefinitely. Exemptions can be made for the following reasons:</p>
+<ul>
+<li><strong>Mitigation</strong>: The resource is already mitigated.</li>
+<li><strong>False positive</strong>: The resource is evaluated as non-compliant, but it is compliant.</li>
+<li><strong>Business justification</strong>: The resource is evaluated as non-compliant, but it is compliant for business reasons.</li>
+<li><strong>Waiver</strong>: The resource is evaluated as non-compliant, but it is compliant for legal reasons.</li>
+</ul>
+<h3 id="how-do-i-create-an-exemption">How do I create an exemption?</h3>
+<p>Exemptions can be created using the Azure Portal, PowerShell, Azure CLI, or REST API. Let&rsquo;s create an exemption using PowerShell.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#75715e"># Get the subscription data</span>
+</span></span><span style="display:flex;"><span>$Subscription = Get-AzSubscription -SubscriptionName <span style="color:#e6db74">&#39;Subscription01&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Get the policy assignment data</span>
+</span></span><span style="display:flex;"><span>$PolicyAssignment = Get-AzPolicyAssignment -Name <span style="color:#e6db74">&#39;add-tag-resource-group&#39;</span> -Scope <span style="color:#e6db74">&#34;/subscriptions/</span>$($Subscription.Id)<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the exemption</span>
+</span></span><span style="display:flex;"><span>New-AzPolicyExemption -Name <span style="color:#e6db74">&#39;exemption-add-tag-resource-group&#39;</span> -PolicyAssignment  $PolicyAssignment -ExemptionCategory <span style="color:#e6db74">&#39;Waiver&#39;</span> -ExpiresOn (Get-Date).AddDays(<span style="color:#ae81ff">7</span>)
+</span></span></code></pre></div><p><img src="../images/exemption_created.png" alt="Exemption created"></p>
+<h2 id="now-what">Now what?</h2>
+<p>Now that you know what Azure Policy is and how to use it, you can start using it in your own environment. Start with the built-in policies and see if they fit your needs. If they don&rsquo;t, you can always create custom policies.</p>
+<p>If you want to explore and view anything policy related in the Azure Portal, simply go to <strong>All services</strong> &gt; <strong>Policy</strong>. Here you can view the compliance dashboard, policy definitions, policy initiatives, policy assignments, and exemptions.</p>
+<p>If you want to know which Azure Policies are built-in available, <a href="https://www.azadvertizer.net/">AzAdvertizer</a> is a great resource to view all the built-in policies.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-meta">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center text-md-left">
+          <ul class="post-meta-tags list-unstyled list-inline">
+            
+            <li class="list-inline-item"><a href="/tags/azure-policy">Azure Policy</a></li>
+            
+            <li class="list-inline-item"><a href="/tags/xpirit-magazine">Xpirit Magazine</a></li>
+            
+            <li class="list-inline-item"><a href="/tags/governance">Governance</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-center text-md-right mt-4 mt-md-0">
+<ul class="social-links has-bg-color list-unstyled list-inline" style="line-height:0">
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://facebook.com/sharer/sharer.php?u=%2fpost%2fazure-policy%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-facebook-f text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://twitter.com/intent/tweet/?text=Azure%20Policy%20-%20Magazine%20article&amp;url=%2fpost%2fazure-policy%2f"
+      target="_blank" rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-twitter text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="https://plus.google.com/share?url=%2fpost%2fazure-policy%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--google resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-google-plus-g text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="mailto:?subject=Azure%20Policy%20-%20Magazine%20article&amp;body=%2fpost%2fazure-policy%2f" target="_self"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="las la-envelope text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+  <li class="list-inline-item">
+    
+    <a class="resp-sharing-button__link d-block" href="whatsapp://send?text=Azure%20Policy%20-%20Magazine%20article%20%2fpost%2fazure-policy%2f" target="_blank"
+      rel="noopener" aria-label="">
+      <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+          <i class="lab la-whatsapp text-dark"></i>
+        </div>
+      </div>
+    </a>
+  </li>
+
+</ul></div>
+      </div>
+    </div>
+
+    <div class="single-post-author">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="media d-block d-sm-flex text-center text-sm-left">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-post-similer">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 class="text-dark font-weight-800 mb-4 pb-2">You May Also Like</h3>
+            </div>
+            
+              
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body" style="border-left: 0.5px solid #ED6B15; padding-left: 10px;">
     <ul class="card-meta list-inline mb-2">
       
       <li class="list-inline-item mb-2">
-        <span>25 Oct, 2023</span>
+        <span>22 Jan, 2023</span>
       </li>
       <li class="list-inline-item mb-2">
         <ul class="card-meta-tag list-inline">
           
           <li class="list-inline-item"><a href="/tags/azure-policy">Azure Policy</a></li>
           
-          <li class="list-inline-item"><a href="/tags/xpirit-magazine">Xpirit Magazine</a></li>
-          
-          <li class="list-inline-item"><a href="/tags/governance">Governance</a></li>
+          <li class="list-inline-item"><a href="/tags/azure-management">Azure Management</a></li>
           
         </ul>
       </li>
     </ul>
     <h3 class="mb-3">
-      <a class="post-title" href="/post/azure-policy/">Azure Policy - Magazine article</a>
+      <a class="post-title" href="/glossary/azure-policies/">Azure Policy</a>
     </h3>
-    <p>This article is written for the Xpirit Magazine #15
-Imagine your company having a multitude of azure resources, and you want to ensure that all of …</p>
+    <p>Azure Policy is a service in Azure that helps you to create, assign, and manage policies. Policies are rules that can be assigned to resources in your …</p>
 
      
   </div>
 </article>
-          </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
+            </div>
+            
+            <div class="col-md-6">
+              <article class="card post-card">
   
   <div class="card-body" style="border-left: 0.5px solid #ED6B15; padding-left: 10px;">
     <ul class="card-meta list-inline mb-2">
@@ -279,37 +736,9 @@ What is …</p>
      
   </div>
 </article>
+            </div>
+            
           </div>
-          
-          <div class="col-lg-6">
-            <article class="card post-card">
-  
-  <div class="card-body" style="border-left: 0.5px solid #ED6B15; padding-left: 10px;">
-    <ul class="card-meta list-inline mb-2">
-      
-      <li class="list-inline-item mb-2">
-        <span>02 Jan, 2023</span>
-      </li>
-      <li class="list-inline-item mb-2">
-        <ul class="card-meta-tag list-inline">
-          
-          <li class="list-inline-item"><a href="/tags/xpirit-magazine">Xpirit Magazine</a></li>
-          
-          <li class="list-inline-item"><a href="/tags/sharing-knowlegde">Sharing Knowlegde</a></li>
-          
-        </ul>
-      </li>
-    </ul>
-    <h3 class="mb-3">
-      <a class="post-title" href="/post/my-xpirit-magazine-articles/">My Xpirit Magazine Articles</a>
-    </h3>
-    <p>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13. In this blog, I&amp;rsquo;m explaining how my daily …</p>
-
-     
-  </div>
-</article>
-          </div>
-          
         </div>
       </div>
     </div>

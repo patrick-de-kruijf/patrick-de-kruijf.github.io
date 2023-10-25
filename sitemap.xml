@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/tags/azure-policy/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/post/azure-policy/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/categories/blog/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/tags/governance/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
+    <loc>/tags/xpirit-magazine/</loc>
+    <lastmod>2023-10-25T00:00:02+00:00</lastmod>
+  </url><url>
     <loc>/glossary/azure-rbac/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,9 +38,6 @@
     <loc>/tags/azure-ad/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/azure-management/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -21,9 +45,6 @@
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/glossary/azure-subscriptions/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/glossary/</loc>
@@ -38,12 +59,6 @@
     <loc>/tags/sso/</loc>
     <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/azure-policy/</loc>
-    <lastmod>2023-01-22T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/glossary/azure-policies/</loc>
     <lastmod>2023-01-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,15 +66,6 @@
     <lastmod>2023-01-09T00:00:02+00:00</lastmod>
   </url><url>
     <loc>/post/azure-virtual-desktop-magazine13/</loc>
-    <lastmod>2023-01-09T00:00:02+00:00</lastmod>
-  </url><url>
-    <loc>/categories/blog/</loc>
-    <lastmod>2023-01-09T00:00:02+00:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2023-01-09T00:00:02+00:00</lastmod>
-  </url><url>
-    <loc>/tags/xpirit-magazine/</loc>
     <lastmod>2023-01-09T00:00:02+00:00</lastmod>
   </url><url>
     <loc>/post/my-xpirit-magazine-articles/</loc>

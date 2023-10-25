@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Azure Policy on Azure Freak Confessions</title>
-    <link>/tags/azure-policy/</link>
-    <description>Recent content in Azure Policy on Azure Freak Confessions</description>
+    <title>Governance on Azure Freak Confessions</title>
+    <link>/tags/governance/</link>
+    <description>Recent content in Governance on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate><atom:link href="/tags/azure-policy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate><atom:link href="/tags/governance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Policy - Magazine article</title>
       <link>/post/azure-policy/</link>
@@ -15,15 +15,6 @@
       <guid>/post/azure-policy/</guid>
       <description>This article is written for the Xpirit Magazine #15
 Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards.</description>
-    </item>
-    
-    <item>
-      <title>Azure Policy</title>
-      <link>/glossary/azure-policies/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/glossary/azure-policies/</guid>
-      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
     </item>
     
   </channel>
