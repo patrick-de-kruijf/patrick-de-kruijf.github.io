@@ -6,34 +6,28 @@
     <description>Recent content in Xpirit Magazine on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate><atom:link href="/tags/xpirit-magazine/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate>
+    <atom:link href="/tags/xpirit-magazine/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Policy - Magazine article</title>
       <link>/post/azure-policy/</link>
       <pubDate>Wed, 25 Oct 2023 00:00:02 +0000</pubDate>
-      
       <guid>/post/azure-policy/</guid>
-      <description>This article is written for the Xpirit Magazine #15
-Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards.</description>
+      <description>This article is written for the Xpirit Magazine #15&#xA;Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards.</description>
     </item>
-    
     <item>
       <title>Azure Virtual Desktop - Magazine article</title>
       <link>/post/azure-virtual-desktop-magazine13/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate>
-      
       <guid>/post/azure-virtual-desktop-magazine13/</guid>
       <description>In 2022 I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.</description>
     </item>
-    
     <item>
       <title>My Xpirit Magazine Articles</title>
       <link>/post/my-xpirit-magazine-articles/</link>
       <pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate>
-      
       <guid>/post/my-xpirit-magazine-articles/</guid>
       <description>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13.</description>
     </item>
-    
   </channel>
 </rss>

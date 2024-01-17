@@ -6,123 +6,98 @@
     <description>Recent content in Glossaries on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/glossary/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/glossary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Access Control (RBAC)</title>
       <link>/glossary/azure-rbac/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/azure-rbac/</guid>
       <description>Access to your Azure resources are managed by Azure Access Control (RBAC). Access control gives your the possibility to manage who has access to your resources and what they can do with them.</description>
     </item>
-    
     <item>
       <title>Azure Active Directory (Azure AD)</title>
       <link>/glossary/azure-active-directory/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/azure-active-directory/</guid>
       <description>Azure Active Directory (Azure AD) is a cloud-based identity and access management service. It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.</description>
     </item>
-    
     <item>
       <title>Azure Management Groups</title>
       <link>/glossary/azure-management-groups/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/azure-management-groups/</guid>
       <description>Management groups provide a governance scope for Azure subscriptions to manage access, policies and compliance. You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.</description>
     </item>
-    
     <item>
       <title>Azure Subscriptions</title>
       <link>/glossary/azure-subscriptions/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/azure-subscriptions/</guid>
       <description>An Azure subscription is a logical container for Azure resources, where you can manage access to those resources.</description>
     </item>
-    
     <item>
       <title>Single Sign-On (SSO)</title>
       <link>/glossary/single-sign-on/</link>
       <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/single-sign-on/</guid>
       <description>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.</description>
     </item>
-    
     <item>
       <title>Azure Policy</title>
       <link>/glossary/azure-policies/</link>
       <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>/glossary/azure-policies/</guid>
       <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
     </item>
-    
     <item>
       <title>Azure Image Builder</title>
       <link>/glossary/azure-image-builder/</link>
       <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
-      
       <guid>/glossary/azure-image-builder/</guid>
       <description>Azure VM Image Builder is a service that creates custom virtual machine images for you. You can use Image Builder to create a custom image that includes the operating system, any software you want to deploy and then deploy this image to any Azure region.</description>
     </item>
-    
     <item>
       <title>Shared Image Gallery</title>
       <link>/glossary/shared-image-gallery/</link>
       <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
-      
       <guid>/glossary/shared-image-gallery/</guid>
       <description>What is a Shared Image Gallery? The Shared Image Gallery is a repository for images that can be used to create VMs.</description>
     </item>
-    
     <item>
       <title>Xpirit Innovation Day</title>
       <link>/glossary/xpirit-innovation-day/</link>
       <pubDate>Thu, 22 Dec 2022 01:13:50 +0000</pubDate>
-      
       <guid>/glossary/xpirit-innovation-day/</guid>
       <description>At Xpirit, we organize Innovation Days once every two months. That&amp;rsquo;s a pretty high frequency. But Authority is our mission and we can only reach our goal by constantly pushing boundaries and exploring new techniques.</description>
     </item>
-    
     <item>
       <title>Infrastructure as Code</title>
       <link>/glossary/infrastructure-as-code/</link>
       <pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate>
-      
       <guid>/glossary/infrastructure-as-code/</guid>
       <description>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code.</description>
     </item>
-    
     <item>
       <title>Cloud Adoption Framework</title>
       <link>/glossary/cloud-adoption-framework/</link>
       <pubDate>Thu, 01 Dec 2022 01:13:50 +0000</pubDate>
-      
       <guid>/glossary/cloud-adoption-framework/</guid>
       <description>The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals.</description>
     </item>
-    
     <item>
       <title>Azure Virtual Desktop</title>
       <link>/glossary/azure-virtual-desktop/</link>
       <pubDate>Tue, 04 Oct 2022 02:13:50 +0000</pubDate>
-      
       <guid>/glossary/azure-virtual-desktop/</guid>
       <description>Azure Virtual Desktop is Microsoft&amp;rsquo;s desktop and app virtualization Virtual Desktop Infrastructure (VDI) service that runs on Microsoft Azure.</description>
     </item>
-    
     <item>
       <title>Azure Landing Zones</title>
       <link>/glossary/azure-landing-zones/</link>
       <pubDate>Mon, 03 Oct 2022 02:13:50 +0000</pubDate>
-      
       <guid>/glossary/azure-landing-zones/</guid>
       <description>An Azure landing zone is the output of a multi-subscription Azure environment that accounts for scale, security governance, networking, and identity.</description>
     </item>
-    
   </channel>
 </rss>

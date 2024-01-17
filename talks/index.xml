@@ -5,69 +5,56 @@
     <link>/talks/</link>
     <description>Recent content in Talks on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/talks/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/talks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>/talks/alz-hub-and-spoke/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/alz-hub-and-spoke/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/avd-scaling/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/avd-scaling/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/azure-deployments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/azure-deployments/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/azure-governance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/azure-governance/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/azure-networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/azure-networking/</guid>
       <description></description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/azure-policies/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/azure-policies/</guid>
       <description>Abstract Links </description>
     </item>
-    
     <item>
       <title></title>
       <link>/talks/shared-image-gallery/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>/talks/shared-image-gallery/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

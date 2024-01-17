@@ -5,24 +5,21 @@
     <link>/tags/avd-/-wvd/</link>
     <description>Recent content in AVD / WVD on Azure Freak Confessions</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/tags/avd-/-wvd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <atom:link href="/tags/avd-/-wvd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Virtual Desktop - Magazine article</title>
       <link>/post/azure-virtual-desktop-magazine13/</link>
       <pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate>
-      
       <guid>/post/azure-virtual-desktop-magazine13/</guid>
       <description>In 2022 I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.</description>
     </item>
-    
     <item>
       <title>Azure Virtual Desktop</title>
       <link>/glossary/azure-virtual-desktop/</link>
       <pubDate>Tue, 04 Oct 2022 02:13:50 +0000</pubDate>
-      
       <guid>/glossary/azure-virtual-desktop/</guid>
       <description>Azure Virtual Desktop is Microsoft&amp;rsquo;s desktop and app virtualization Virtual Desktop Infrastructure (VDI) service that runs on Microsoft Azure.</description>
     </item>
-    
   </channel>
 </rss>
