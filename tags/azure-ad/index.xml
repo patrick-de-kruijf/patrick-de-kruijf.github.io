@@ -1,26 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Azure AD on Azure Freak Confessions</title>
-    <link>/tags/azure-ad/</link>
-    <description>Recent content in Azure AD on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/azure-ad/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure Active Directory (Azure AD)</title>
-      <link>/glossary/azure-active-directory/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-active-directory/</guid>
-      <description>Azure Active Directory (Azure AD) is a cloud-based identity and access management service. It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.</description>
-    </item>
-    <item>
-      <title>Single Sign-On (SSO)</title>
-      <link>/glossary/single-sign-on/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/single-sign-on/</guid>
-      <description>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure AD on Azure Freak Confessions</title><link>/tags/azure-ad/</link><description>Recent content in Azure AD on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/azure-ad/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Active Directory (Azure AD)</title><link>/glossary/azure-active-directory/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-active-directory/</guid><description>&lt;p>Azure Active Directory (Azure AD) is a cloud-based identity and access management service.
+It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.&lt;/p></description></item><item><title>Single Sign-On (SSO)</title><link>/glossary/single-sign-on/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/single-sign-on/</guid><description>&lt;p>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.
+Using SSO means a user doesn&amp;rsquo;t have to sign in to every application they use. With SSO, users can access all needed applications without being required to authenticate using different credentials.&lt;/p></description></item></channel></rss>

@@ -1,187 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Azure Freak Confessions</title>
-    <link>/</link>
-    <description>Recent content on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure Policy - Magazine article</title>
-      <link>/post/azure-policy/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:02 +0000</pubDate>
-      <guid>/post/azure-policy/</guid>
-      <description>This article is written for the Xpirit Magazine #15&#xA;Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards.</description>
-    </item>
-    <item>
-      <title>Azure Access Control (RBAC)</title>
-      <link>/glossary/azure-rbac/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-rbac/</guid>
-      <description>Access to your Azure resources are managed by Azure Access Control (RBAC). Access control gives your the possibility to manage who has access to your resources and what they can do with them.</description>
-    </item>
-    <item>
-      <title>Azure Active Directory (Azure AD)</title>
-      <link>/glossary/azure-active-directory/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-active-directory/</guid>
-      <description>Azure Active Directory (Azure AD) is a cloud-based identity and access management service. It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.</description>
-    </item>
-    <item>
-      <title>Azure Management Groups</title>
-      <link>/glossary/azure-management-groups/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-management-groups/</guid>
-      <description>Management groups provide a governance scope for Azure subscriptions to manage access, policies and compliance. You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.</description>
-    </item>
-    <item>
-      <title>Azure Subscriptions</title>
-      <link>/glossary/azure-subscriptions/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-subscriptions/</guid>
-      <description>An Azure subscription is a logical container for Azure resources, where you can manage access to those resources.</description>
-    </item>
-    <item>
-      <title>Single Sign-On (SSO)</title>
-      <link>/glossary/single-sign-on/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/single-sign-on/</guid>
-      <description>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.</description>
-    </item>
-    <item>
-      <title>Azure Policy</title>
-      <link>/glossary/azure-policies/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-policies/</guid>
-      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
-    </item>
-    <item>
-      <title>Azure Virtual Desktop - Magazine article</title>
-      <link>/post/azure-virtual-desktop-magazine13/</link>
-      <pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate>
-      <guid>/post/azure-virtual-desktop-magazine13/</guid>
-      <description>In 2022 I published an article in our Xpirit Magazine #13 about Azure Virtual Desktop. In this post I will give you a summary of the article.</description>
-    </item>
-    <item>
-      <title>My Xpirit Magazine Articles</title>
-      <link>/post/my-xpirit-magazine-articles/</link>
-      <pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate>
-      <guid>/post/my-xpirit-magazine-articles/</guid>
-      <description>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13.</description>
-    </item>
-    <item>
-      <title>Azure Image Builder</title>
-      <link>/glossary/azure-image-builder/</link>
-      <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
-      <guid>/glossary/azure-image-builder/</guid>
-      <description>Azure VM Image Builder is a service that creates custom virtual machine images for you. You can use Image Builder to create a custom image that includes the operating system, any software you want to deploy and then deploy this image to any Azure region.</description>
-    </item>
-    <item>
-      <title>Shared Image Gallery</title>
-      <link>/glossary/shared-image-gallery/</link>
-      <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
-      <guid>/glossary/shared-image-gallery/</guid>
-      <description>What is a Shared Image Gallery? The Shared Image Gallery is a repository for images that can be used to create VMs.</description>
-    </item>
-    <item>
-      <title>Xpirit Innovation Day</title>
-      <link>/glossary/xpirit-innovation-day/</link>
-      <pubDate>Thu, 22 Dec 2022 01:13:50 +0000</pubDate>
-      <guid>/glossary/xpirit-innovation-day/</guid>
-      <description>At Xpirit, we organize Innovation Days once every two months. That&amp;rsquo;s a pretty high frequency. But Authority is our mission and we can only reach our goal by constantly pushing boundaries and exploring new techniques.</description>
-    </item>
-    <item>
-      <title>Infrastructure as Code</title>
-      <link>/glossary/infrastructure-as-code/</link>
-      <pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate>
-      <guid>/glossary/infrastructure-as-code/</guid>
-      <description>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code.</description>
-    </item>
-    <item>
-      <title>Cloud Adoption Framework</title>
-      <link>/glossary/cloud-adoption-framework/</link>
-      <pubDate>Thu, 01 Dec 2022 01:13:50 +0000</pubDate>
-      <guid>/glossary/cloud-adoption-framework/</guid>
-      <description>The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals.</description>
-    </item>
-    <item>
-      <title>Azure Virtual Desktop</title>
-      <link>/glossary/azure-virtual-desktop/</link>
-      <pubDate>Tue, 04 Oct 2022 02:13:50 +0000</pubDate>
-      <guid>/glossary/azure-virtual-desktop/</guid>
-      <description>Azure Virtual Desktop is Microsoft&amp;rsquo;s desktop and app virtualization Virtual Desktop Infrastructure (VDI) service that runs on Microsoft Azure.</description>
-    </item>
-    <item>
-      <title>Azure Landing Zones</title>
-      <link>/glossary/azure-landing-zones/</link>
-      <pubDate>Mon, 03 Oct 2022 02:13:50 +0000</pubDate>
-      <guid>/glossary/azure-landing-zones/</guid>
-      <description>An Azure landing zone is the output of a multi-subscription Azure environment that accounts for scale, security governance, networking, and identity.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/alz-hub-and-spoke/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/alz-hub-and-spoke/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/avd-scaling/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/avd-scaling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/azure-deployments/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/azure-deployments/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/azure-governance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/azure-governance/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/azure-networking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/azure-networking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/azure-policies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/azure-policies/</guid>
-      <description>Abstract Links </description>
-    </item>
-    <item>
-      <title></title>
-      <link>/talks/shared-image-gallery/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/talks/shared-image-gallery/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About</title>
-      <link>/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/about/</guid>
-      <description>Professionally A consultant with 15+ years experience working with an incredible amount of companies to help them reach their goals and guide them through their journey.</description>
-    </item>
-    <item>
-      <title>Search Result</title>
-      <link>/search/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/search/</guid>
-      <description></description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure Freak Confessions</title><link>/</link><description>Recent content on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 00:00:02 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Managed DevOps Pools</title><link>/post/managed-devops-pools/</link><pubDate>Tue, 08 Oct 2024 00:00:02 +0000</pubDate><guid>/post/managed-devops-pools/</guid><description>&lt;h1 id="managed-devops-pools">Managed DevOps Pools&lt;/h1>
+&lt;p>Have you ever had to deploy, configure, and maintain your own DevOps agents, be it for Azure DevOps or GitHub? If so, then you probably found out it is such a hassle to keep everything up-to-date and up-and-running.&lt;/p></description></item><item><title>Azure Policy - Magazine article</title><link>/post/azure-policy/</link><pubDate>Wed, 25 Oct 2023 00:00:02 +0000</pubDate><guid>/post/azure-policy/</guid><description>&lt;p>&lt;em>This article is written for the &lt;a href="https://xpirit.com/download/xprt-magazine-n-15/">Xpirit Magazine #15&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards. You could go through each resource and check if they are compliant, but that would be a lot of work. Luckily, Azure Policy can help you with that. Azure Policy is a management tool that helps you enforce and control the settings and configurations of resources within your Azure cloud environment. It enables you to define and enforce rules and policies to ensure that your resources adhere to specific compliance and governance requirements. These policies can cover various aspects, such as security, resource tagging, and naming conventions, helping you maintain a consistent and secure cloud infrastructure. Azure Policy provides a centralized way to monitor and enforce these policies, ensuring that your Azure resources are aligned with your organization&amp;rsquo;s standards and best practices.&lt;/p></description></item><item><title>Azure Access Control (RBAC)</title><link>/glossary/azure-rbac/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-rbac/</guid><description>&lt;p>Access to your Azure resources are managed by Azure Access Control (RBAC).
+Access control gives your the possibility to manage who has access to your resources and what they can do with them.&lt;/p></description></item><item><title>Azure Active Directory (Azure AD)</title><link>/glossary/azure-active-directory/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-active-directory/</guid><description>&lt;p>Azure Active Directory (Azure AD) is a cloud-based identity and access management service.
+It provides single sign-on and multi-factor authentication to help protect your users from cyber attacks.&lt;/p></description></item><item><title>Azure Management Groups</title><link>/glossary/azure-management-groups/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-management-groups/</guid><description>&lt;p>Management groups provide a governance scope for &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-subscriptions/">Azure subscriptions&lt;/a> to manage &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-rbac/">access&lt;/a>, &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-policies/">policies and compliance&lt;/a>.
+You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.&lt;/p></description></item><item><title>Azure Subscriptions</title><link>/glossary/azure-subscriptions/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-subscriptions/</guid><description>&lt;p>An Azure subscription is a logical container for Azure resources, where you can manage access to those resources.
+You can create multiple subscriptions in Azure, and each subscription can contain one or more resource groups.&lt;/p></description></item><item><title>Single Sign-On (SSO)</title><link>/glossary/single-sign-on/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/single-sign-on/</guid><description>&lt;p>Single sign-on is an authentication method that allows users to sign in using one set of credentials to multiple independent software systems.
+Using SSO means a user doesn&amp;rsquo;t have to sign in to every application they use. With SSO, users can access all needed applications without being required to authenticate using different credentials.&lt;/p></description></item><item><title>Azure Policy</title><link>/glossary/azure-policies/</link><pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-policies/</guid><description>&lt;p>Azure Policy is a service in Azure that helps you to create, assign, and manage policies. Policies are rules that can be assigned to resources in your Azure environment.
+You can use Azure Policy to enforce standards and to assess compliance. You can also use policies to prevent or (automatically) remediate non-compliant resources.&lt;/p></description></item><item><title>Azure Virtual Desktop - Magazine article</title><link>/post/azure-virtual-desktop-magazine13/</link><pubDate>Mon, 09 Jan 2023 00:00:02 +0000</pubDate><guid>/post/azure-virtual-desktop-magazine13/</guid><description>&lt;p>In 2022 I published an article in our &lt;a href="https://xpirit.com/download/xprt-magazine-n-13/">Xpirit Magazine #13&lt;/a> about &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-virtual-desktop/">Azure Virtual Desktop&lt;/a>. In this post I will give you a summary of &lt;a href="https://xpirit.com/wp-content/uploads/2022/10/Xpirit_XPRT_magazine_13_final.pdf#page=28?utm_campaign=Xpirit%20-%20Magazine%2013&amp;amp;utm_source=download-page">the article&lt;/a>.&lt;/p></description></item><item><title>My Xpirit Magazine Articles</title><link>/post/my-xpirit-magazine-articles/</link><pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate><guid>/post/my-xpirit-magazine-articles/</guid><description>&lt;p>My articles regarding &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-virtual-desktop/">Azure Virtual Desktop&lt;/a> and &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-landing-zones/">Azure Landing Zones&lt;/a> are in the &lt;a href="https://xpirit.com/download/xprt-magazine-n-13/">Xpirit Magazine #13&lt;/a>.
+In this blog, I&amp;rsquo;m explaining how my daily job tasks got an epic place in the Xpirit Magazine!&lt;/p></description></item><item><title>Azure Image Builder</title><link>/glossary/azure-image-builder/</link><pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate><guid>/glossary/azure-image-builder/</guid><description>&lt;p>Azure VM Image Builder is a service that creates custom virtual machine images for you.
+You can use Image Builder to create a custom image that includes the operating system, any software you want to deploy and then deploy this image to any Azure region.
+Image Builder is a fully managed service that simplifies the process of creating and maintaining custom images.&lt;/p></description></item><item><title>Shared Image Gallery</title><link>/glossary/shared-image-gallery/</link><pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate><guid>/glossary/shared-image-gallery/</guid><description>&lt;h2 id="what-is-a-shared-image-gallery">What is a Shared Image Gallery?&lt;/h2>
+&lt;p>The Shared Image Gallery is a repository for images that can be used to create VMs. The repository can be shared across subscriptions, regions and tenants. The Shared Image Gallery is a service that is part of the Azure Compute service.
+If you have a large number of images that you need to maintain, and would like to make them available throughout multiple subscriptions or tenants, you can use an Azure Compute Gallery as a repository.&lt;/p></description></item><item><title>Xpirit Innovation Day</title><link>/glossary/xpirit-innovation-day/</link><pubDate>Thu, 22 Dec 2022 01:13:50 +0000</pubDate><guid>/glossary/xpirit-innovation-day/</guid><description>&lt;p>At Xpirit, we organize Innovation Days once every two months. That&amp;rsquo;s a pretty high frequency. But Authority is our mission and we can only reach our goal by constantly pushing boundaries and exploring new techniques.
+It&amp;rsquo;s also a way for us to connect with each other. Having good conversations while enjoying good food and drinks, makes for a great vibe. Do you want to know more about why we are doing Innovation Days?
+Watch the video below. And would you like to embrace change, push your boundaries, and do epic assignments?
+We love to have a chat to explore the opportunities together and see how we can support you in your career journey. Send us a message via the chat or fill out our &lt;a href="https://xpirit.com/contact/">contact form&lt;/a>.&lt;/p></description></item><item><title>Infrastructure as Code</title><link>/glossary/infrastructure-as-code/</link><pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate><guid>/glossary/infrastructure-as-code/</guid><description>&lt;p>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code. This means that you can use the same tools and processes as you use for your application code.
+This allows you to automate the deployment of your infrastructure and to manage it in the same way as your application code. This is a very powerful concept that allows you to manage your infrastructure in a very efficient way.&lt;/p></description></item><item><title>Cloud Adoption Framework</title><link>/glossary/cloud-adoption-framework/</link><pubDate>Thu, 01 Dec 2022 01:13:50 +0000</pubDate><guid>/glossary/cloud-adoption-framework/</guid><description>&lt;p>The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals. It provides best practices, documentation, and tools that help you create and implement business and technology strategies for the cloud.&lt;/p></description></item><item><title>Azure Virtual Desktop</title><link>/glossary/azure-virtual-desktop/</link><pubDate>Tue, 04 Oct 2022 02:13:50 +0000</pubDate><guid>/glossary/azure-virtual-desktop/</guid><description>&lt;p>Azure Virtual Desktop is Microsoft&amp;rsquo;s desktop and app virtualization Virtual Desktop Infrastructure (VDI) service that runs on Microsoft Azure. Azure Virtual Desktop allows for multi-session virtual machines with scalability on Azure. As an administrator, it enables you to have a single management experience for multiple Windows operating systems.&lt;/p></description></item><item><title>Azure Landing Zones</title><link>/glossary/azure-landing-zones/</link><pubDate>Mon, 03 Oct 2022 02:13:50 +0000</pubDate><guid>/glossary/azure-landing-zones/</guid><description>&lt;p>An Azure landing zone is the output of a multi-subscription Azure environment that accounts for scale, security governance, networking, and identity. An Azure landing zone enables application migration, modernization, and innovation at enterprise-scale in Azure. This approach considers all platform resources that are required to support the customer&amp;rsquo;s application portfolio and doesn&amp;rsquo;t differentiate between infrastructure as a service or platform as a service.&lt;/p></description></item><item><title/><link>/talks/alz-hub-and-spoke/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/alz-hub-and-spoke/</guid><description/></item><item><title/><link>/talks/avd-scaling/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/avd-scaling/</guid><description/></item><item><title/><link>/talks/azure-deployments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/azure-deployments/</guid><description/></item><item><title/><link>/talks/azure-governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/azure-governance/</guid><description/></item><item><title/><link>/talks/azure-networking/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/azure-networking/</guid><description/></item><item><title/><link>/talks/azure-policies/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/azure-policies/</guid><description>&lt;h2 id="abstract">Abstract&lt;/h2>
+&lt;h2 id="links">Links&lt;/h2></description></item><item><title/><link>/talks/shared-image-gallery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/talks/shared-image-gallery/</guid><description/></item><item><title>About</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>&lt;h4 id="professionally">Professionally&lt;/h4>
+&lt;p>A consultant with 15+ years experience working with an incredible amount of companies to help them reach their goals and guide them through their journey.&lt;/p></description></item><item><title>Search Result</title><link>/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/search/</guid><description/></item></channel></rss>

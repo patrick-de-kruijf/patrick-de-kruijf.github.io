@@ -1,19 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>SIG on Azure Freak Confessions</title>
-    <link>/tags/sig/</link>
-    <description>Recent content in SIG on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 29 Dec 2022 08:30:00 +0000</lastBuildDate>
-    <atom:link href="/tags/sig/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Shared Image Gallery</title>
-      <link>/glossary/shared-image-gallery/</link>
-      <pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate>
-      <guid>/glossary/shared-image-gallery/</guid>
-      <description>What is a Shared Image Gallery? The Shared Image Gallery is a repository for images that can be used to create VMs.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SIG on Azure Freak Confessions</title><link>/tags/sig/</link><description>Recent content in SIG on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 29 Dec 2022 08:30:00 +0000</lastBuildDate><atom:link href="/tags/sig/index.xml" rel="self" type="application/rss+xml"/><item><title>Shared Image Gallery</title><link>/glossary/shared-image-gallery/</link><pubDate>Thu, 29 Dec 2022 08:30:00 +0000</pubDate><guid>/glossary/shared-image-gallery/</guid><description>&lt;h2 id="what-is-a-shared-image-gallery">What is a Shared Image Gallery?&lt;/h2>
+&lt;p>The Shared Image Gallery is a repository for images that can be used to create VMs. The repository can be shared across subscriptions, regions and tenants. The Shared Image Gallery is a service that is part of the Azure Compute service.
+If you have a large number of images that you need to maintain, and would like to make them available throughout multiple subscriptions or tenants, you can use an Azure Compute Gallery as a repository.&lt;/p></description></item></channel></rss>

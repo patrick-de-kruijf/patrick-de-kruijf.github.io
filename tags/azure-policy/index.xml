@@ -1,26 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Azure Policy on Azure Freak Confessions</title>
-    <link>/tags/azure-policy/</link>
-    <description>Recent content in Azure Policy on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 25 Oct 2023 00:00:02 +0000</lastBuildDate>
-    <atom:link href="/tags/azure-policy/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure Policy - Magazine article</title>
-      <link>/post/azure-policy/</link>
-      <pubDate>Wed, 25 Oct 2023 00:00:02 +0000</pubDate>
-      <guid>/post/azure-policy/</guid>
-      <description>This article is written for the Xpirit Magazine #15&#xA;Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards.</description>
-    </item>
-    <item>
-      <title>Azure Policy</title>
-      <link>/glossary/azure-policies/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-policies/</guid>
-      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure Policy on Azure Freak Confessions</title><link>/tags/azure-policy/</link><description>Recent content in Azure Policy on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 08 Oct 2024 00:00:02 +0000</lastBuildDate><atom:link href="/tags/azure-policy/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Managed DevOps Pools</title><link>/post/managed-devops-pools/</link><pubDate>Tue, 08 Oct 2024 00:00:02 +0000</pubDate><guid>/post/managed-devops-pools/</guid><description>&lt;h1 id="managed-devops-pools">Managed DevOps Pools&lt;/h1>
+&lt;p>Have you ever had to deploy, configure, and maintain your own DevOps agents, be it for Azure DevOps or GitHub? If so, then you probably found out it is such a hassle to keep everything up-to-date and up-and-running.&lt;/p></description></item><item><title>Azure Policy - Magazine article</title><link>/post/azure-policy/</link><pubDate>Wed, 25 Oct 2023 00:00:02 +0000</pubDate><guid>/post/azure-policy/</guid><description>&lt;p>&lt;em>This article is written for the &lt;a href="https://xpirit.com/download/xprt-magazine-n-15/">Xpirit Magazine #15&lt;/a>&lt;/em>&lt;/p>
+&lt;p>Imagine your company having a multitude of azure resources, and you want to ensure that all of them are compliant with your company&amp;rsquo;s standards. You could go through each resource and check if they are compliant, but that would be a lot of work. Luckily, Azure Policy can help you with that. Azure Policy is a management tool that helps you enforce and control the settings and configurations of resources within your Azure cloud environment. It enables you to define and enforce rules and policies to ensure that your resources adhere to specific compliance and governance requirements. These policies can cover various aspects, such as security, resource tagging, and naming conventions, helping you maintain a consistent and secure cloud infrastructure. Azure Policy provides a centralized way to monitor and enforce these policies, ensuring that your Azure resources are aligned with your organization&amp;rsquo;s standards and best practices.&lt;/p></description></item><item><title>Azure Policy</title><link>/glossary/azure-policies/</link><pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-policies/</guid><description>&lt;p>Azure Policy is a service in Azure that helps you to create, assign, and manage policies. Policies are rules that can be assigned to resources in your Azure environment.
+You can use Azure Policy to enforce standards and to assess compliance. You can also use policies to prevent or (automatically) remediate non-compliant resources.&lt;/p></description></item></channel></rss>

@@ -1,40 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Azure Management on Azure Freak Confessions</title>
-    <link>/tags/azure-management/</link>
-    <description>Recent content in Azure Management on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/azure-management/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Azure Access Control (RBAC)</title>
-      <link>/glossary/azure-rbac/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-rbac/</guid>
-      <description>Access to your Azure resources are managed by Azure Access Control (RBAC). Access control gives your the possibility to manage who has access to your resources and what they can do with them.</description>
-    </item>
-    <item>
-      <title>Azure Management Groups</title>
-      <link>/glossary/azure-management-groups/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-management-groups/</guid>
-      <description>Management groups provide a governance scope for Azure subscriptions to manage access, policies and compliance. You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.</description>
-    </item>
-    <item>
-      <title>Azure Subscriptions</title>
-      <link>/glossary/azure-subscriptions/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-subscriptions/</guid>
-      <description>An Azure subscription is a logical container for Azure resources, where you can manage access to those resources.</description>
-    </item>
-    <item>
-      <title>Azure Policy</title>
-      <link>/glossary/azure-policies/</link>
-      <pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>/glossary/azure-policies/</guid>
-      <description>Azure Policy is a service in Azure that helps you to create, assign, and manage policies.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure Management on Azure Freak Confessions</title><link>/tags/azure-management/</link><description>Recent content in Azure Management on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/azure-management/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure Access Control (RBAC)</title><link>/glossary/azure-rbac/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-rbac/</guid><description>&lt;p>Access to your Azure resources are managed by Azure Access Control (RBAC).
+Access control gives your the possibility to manage who has access to your resources and what they can do with them.&lt;/p></description></item><item><title>Azure Management Groups</title><link>/glossary/azure-management-groups/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-management-groups/</guid><description>&lt;p>Management groups provide a governance scope for &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-subscriptions/">Azure subscriptions&lt;/a> to manage &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-rbac/">access&lt;/a>, &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-policies/">policies and compliance&lt;/a>.
+You organize subscriptions into management groups and the governance conditions you apply cascade by inheritance to all associated subscriptions.&lt;/p></description></item><item><title>Azure Subscriptions</title><link>/glossary/azure-subscriptions/</link><pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-subscriptions/</guid><description>&lt;p>An Azure subscription is a logical container for Azure resources, where you can manage access to those resources.
+You can create multiple subscriptions in Azure, and each subscription can contain one or more resource groups.&lt;/p></description></item><item><title>Azure Policy</title><link>/glossary/azure-policies/</link><pubDate>Sun, 22 Jan 2023 00:00:00 +0000</pubDate><guid>/glossary/azure-policies/</guid><description>&lt;p>Azure Policy is a service in Azure that helps you to create, assign, and manage policies. Policies are rules that can be assigned to resources in your Azure environment.
+You can use Azure Policy to enforce standards and to assess compliance. You can also use policies to prevent or (automatically) remediate non-compliant resources.&lt;/p></description></item></channel></rss>

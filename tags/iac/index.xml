@@ -1,19 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>IaC on Azure Freak Confessions</title>
-    <link>/tags/iac/</link>
-    <description>Recent content in IaC on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 08 Dec 2022 02:13:50 +0000</lastBuildDate>
-    <atom:link href="/tags/iac/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Infrastructure as Code</title>
-      <link>/glossary/infrastructure-as-code/</link>
-      <pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate>
-      <guid>/glossary/infrastructure-as-code/</guid>
-      <description>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IaC on Azure Freak Confessions</title><link>/tags/iac/</link><description>Recent content in IaC on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 08 Dec 2022 02:13:50 +0000</lastBuildDate><atom:link href="/tags/iac/index.xml" rel="self" type="application/rss+xml"/><item><title>Infrastructure as Code</title><link>/glossary/infrastructure-as-code/</link><pubDate>Thu, 08 Dec 2022 02:13:50 +0000</pubDate><guid>/glossary/infrastructure-as-code/</guid><description>&lt;p>Infrastructure as Code (IaC) is a DevOps methodology that allows you to manage your infrastructure as code. This means that you can use the same tools and processes as you use for your application code.
+This allows you to automate the deployment of your infrastructure and to manage it in the same way as your application code. This is a very powerful concept that allows you to manage your infrastructure in a very efficient way.&lt;/p></description></item></channel></rss>

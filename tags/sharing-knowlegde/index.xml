@@ -1,19 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sharing Knowlegde on Azure Freak Confessions</title>
-    <link>/tags/sharing-knowlegde/</link>
-    <description>Recent content in Sharing Knowlegde on Azure Freak Confessions</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 02 Jan 2023 00:00:02 +0000</lastBuildDate>
-    <atom:link href="/tags/sharing-knowlegde/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My Xpirit Magazine Articles</title>
-      <link>/post/my-xpirit-magazine-articles/</link>
-      <pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate>
-      <guid>/post/my-xpirit-magazine-articles/</guid>
-      <description>My articles regarding Azure Virtual Desktop and Azure Landing Zones are in the Xpirit Magazine #13.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sharing Knowlegde on Azure Freak Confessions</title><link>/tags/sharing-knowlegde/</link><description>Recent content in Sharing Knowlegde on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 02 Jan 2023 00:00:02 +0000</lastBuildDate><atom:link href="/tags/sharing-knowlegde/index.xml" rel="self" type="application/rss+xml"/><item><title>My Xpirit Magazine Articles</title><link>/post/my-xpirit-magazine-articles/</link><pubDate>Mon, 02 Jan 2023 00:00:02 +0000</pubDate><guid>/post/my-xpirit-magazine-articles/</guid><description>&lt;p>My articles regarding &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-virtual-desktop/">Azure Virtual Desktop&lt;/a> and &lt;a href="https://www.azurefreakconfessions.com/glossary/azure-landing-zones/">Azure Landing Zones&lt;/a> are in the &lt;a href="https://xpirit.com/download/xprt-magazine-n-13/">Xpirit Magazine #13&lt;/a>.
+In this blog, I&amp;rsquo;m explaining how my daily job tasks got an epic place in the Xpirit Magazine!&lt;/p></description></item></channel></rss>
