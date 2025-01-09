@@ -1,10 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure Networking on Azure Freak Confessions</title><link>/tags/azure-networking/</link><description>Recent content in Azure Networking on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 21 Dec 2024 00:00:02 +0000</lastBuildDate><atom:link href="/tags/azure-networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure IPAM Pools - WORK IN PROGRESS!</title><link>/post/azure-ipam-pools/</link><pubDate>Sat, 21 Dec 2024 00:00:02 +0000</pubDate><guid>/post/azure-ipam-pools/</guid><description>&lt;p>WORK IN PROGRESS!&lt;/p>
-&lt;h1 id="ipam-pools----azure-virtual-network-manager">IPAM Pools - Azure Virtual Network Manager&lt;/h1>
-&lt;p>IPAM&lt;/p>
-&lt;h3 id="links">Links&lt;/h3>
-&lt;ul>
-&lt;li>&lt;a href="https://github.com/patrick-de-kruijf/azure-virtual-network-ipam-pools">Code Repository&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;!-- - [Microsoft Learn](https://learn.microsoft.com/en-us/azure/devops/managed-devops-pools/?view=azure-devops)
-- [Origin Story](https://devblogs.microsoft.com/engineering-at-microsoft/managed-devops-pools-the-origin-story/)
-- [Public preview announcement](https://devblogs.microsoft.com/devops/managed-devops-pools/) --></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Azure Networking on Azure Freak Confessions</title><link>/tags/azure-networking/</link><description>Recent content in Azure Networking on Azure Freak Confessions</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 21 Dec 2024 00:00:02 +0000</lastBuildDate><atom:link href="/tags/azure-networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Azure IPAM Pools - WORK IN PROGRESS!</title><link>/post/azure-ipam-pools/</link><pubDate>Sat, 21 Dec 2024 00:00:02 +0000</pubDate><guid>/post/azure-ipam-pools/</guid><description>&lt;h1 id="ipam-pools----azure-virtual-network-manager">IPAM Pools - Azure Virtual Network Manager&lt;/h1>
+&lt;p>Have you ever had to manage your IP-Addresses within Azure and make sure there are not overlapping ranges. Or had to find out which IP-Address range was still available.
+For me this was such a tedious task, especialy working in a team and potentially forgetting to update wiki pages, Excel files or other documents scattered across various systems.&lt;/p></description></item></channel></rss>
